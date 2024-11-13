@@ -1,0 +1,55 @@
+
+.container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+
+form > p{
+    margin: 2px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 5px; /* Espaciado interno para que los campos de texto sean más cómodos */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    background-color: var(--text-input-field);
+    border-style: none;
+    border-radius: 10px;
+}
+
+@media(max-width: 640px){
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+}
+
+
+
+@media(min-width:640px){
+    .container > * {
+        padding-bottom: 15px;
+    }
+}
