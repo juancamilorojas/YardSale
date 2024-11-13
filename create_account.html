@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
+    <title>Create or Edit account</title>
     <link rel="stylesheet" href="./general.css">
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./create_account.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -13,12 +13,16 @@
 <body>
     <section class="container">
         <img id="logo" src="logos/logo_yard_sale.svg" alt="logo">
-        <div class= "login">
+        <div class= "my_account">
             <section class="title_subtitle">
-                <h1 class="title">Already registered?</h1>
-                <h2 class="subtitle">Enter your existing account</h2>
+                <h1 class="title">My Account?</h1>
+                <h2 class="subtitle">Please type your information</h2>
             </section>
             <form class="form">
+                <p>
+                    <p class="title-text"><label for="user_name">Name</label></p>
+                    <p><input placeholder="Papaya Whip" type="text" name="name"></p>
+                </p>
                 <p>
                     <p class="title-text"><label for="email_address">Email Address</label></p>
                     <p><input placeholder="yardsale@example.com" type="text" name="email_address"></p>
@@ -27,11 +31,15 @@
                     <p class="title-text"><label for="password">Enter password</label></p>
                     <p><input placeholder="*******" type="password" name="password"></p>
                 </p>
-                <button class="primary_button">Log in</button>
-                <a href="/">Forgot my password</a>
+                <p>
+                    <p class="title-text"><label for="password_2">Re-enter password</label></p>
+                    <p><input placeholder="*******" type="password" name="password"></p>
+                </p>
+                <section id="save_buttom">
+                    <button id="save_primary_buttom" class="primary_button">Save</button>
+                    <a href="/">Terms & conditions</a>
+                </section>
             </form>
-            
-            <button id="signup_buttom" class="secondary_button">Sign Up</button>
         </div>
     </section>
 </body>

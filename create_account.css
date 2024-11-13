@@ -19,6 +19,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -36,13 +37,30 @@ input {
     border-radius: 10px;
 }
 
+#save_buttom{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
 @media(max-width: 640px){
+    .container{
+    height: 100%;
+    }
+    
     .form{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         align-items: center;
-        margin-bottom: 80px;
+        height: 100%;
+    }
+
+    #save_primary_buttom{
+        position: fixed;
+        bottom:0; 
+        margin-bottom:24px;
     }
 }
 
