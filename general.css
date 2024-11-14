@@ -48,6 +48,14 @@ font-style: normal;*/
     font-size: small;
 }
 
+.text{
+    color:rgb(168, 168, 168);
+    font-weight: 500;
+    font-size: smaller;
+    margin: 5px;
+    text-align: left; 
+}
+
 .primary_button{
     margin-top:10px;
     background-color: var(--hospital-green);
