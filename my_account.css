@@ -1,0 +1,52 @@
+
+.container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+}
+
+.my_account{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.info{
+    align-items: center;
+}
+
+
+.my_account > p{
+    margin: 2px;
+    width: 100%;
+}
+
+
+#edit_buttom{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+@media(max-width: 640px){
+    .my_account{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: left;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    #edit_buttom{
+        position: fixed;
+        bottom:0; 
+        margin-bottom: 24px;
+    }
+}
+
